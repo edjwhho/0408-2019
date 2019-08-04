@@ -1,7 +1,7 @@
 #!/usr/bin/expect -f
 
 set server "ubuntu@ec2-52-53-177-239.us-west-1.compute.amazonaws.com"
-spawn bash -c "sudo scp -i /home/edj/.ssh/aws1.pem umsl-0.0.1-SNAPSHOT.jar  $server:"
+spawn bash -c "sudo scp -i /home/edj/.ssh/aws1.pem /var/lib/jenkins/workspace/pipeline1/myproject/target/umsl-0.0.1-SNAPSHOT.jar  $server:"
 
 expect {
   -re ".*es.*o.*" {
