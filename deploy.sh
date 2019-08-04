@@ -11,5 +11,5 @@ expect {
 }
 
 interact
-sudo ssh -i "/home/edj/.ssh/aws1.pem" $server "killall java"
-sudo ssh -i "/home/edj/.ssh/aws1.pem" $server "java -jar umsl-0.0.1-SNAPSHOT.jar &"
+/usr/bin/sudo ssh -i "/home/edj/.ssh/aws1.pem" $server "killall java"
+/usr/bin/sudo ssh -i "/home/edj/.ssh/aws1.pem" $server "java -jar umsl-0.0.1-SNAPSHOT.jar &"
