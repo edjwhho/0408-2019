@@ -9,9 +9,6 @@ expect {
     exp_continue
   }
 }
-catch wait result
-if [lindex $result 3] { send_user "fail\n";  exit 1 }
-send_user "ok\n"
 
 interact
 
